@@ -1,0 +1,14 @@
+<h1><strong>Showing User deatails</strong></h1>
+
+<p>
+<strong>username:</strong><%= @user.username %>
+</p>
+
+<p>
+    <strong>email:</strong><%= @user.email %>
+</p>
+
+<%= link_to 'edit', edit_user_path(@user.id) %> |
+<%= link_to 'delete', user_path(@user.id), method: :delete %> |
+<%= link_to 'Go to users list', users_path(@user) %>
+
